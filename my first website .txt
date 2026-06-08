@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Najam Ud Din | Portfolio</title>
+<img src="profile.jpg" class="profile">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+  color:#333;
+}
+
+/* HERO SECTION */
+.hero{
+  background:linear-gradient(135deg,#0077cc,#00aaff);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.profile{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid white;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:32px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-top:10px;
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1000px;
+  margin:20px auto;
+}
+
+/* CARDS */
+.card{
+  background:white;
+  padding:25px;
+  margin-bottom:20px;
+  border-radius:15px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+  color:#0077cc;
+  margin-bottom:15px;
+}
+
+/* SKILLS */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+.skill{
+  background:#0077cc;
+  color:white;
+  padding:15px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* BUTTON */
+button{
+  background:#0077cc;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+  <img src="profile.jpg" alt="Profile Photo" class="profile">
+
+  <h1>Najam Ud Din</h1>
+  <p>Web Developer | Trader | Video Editor | Crypto Trader</p>
+
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am Najam Ud Din from Mardan, Pakistan.
+      I am passionate about web development, trading,
+      cryptocurrency, and video editing.
+      I enjoy learning new technologies and building modern websites.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Education</h2>
+    <p>Matric (10th Class)</p>
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Web Development</div>
+      <div class="skill">Video Editing</div>
+      <div class="skill">Trading</div>
+      <div class="skill">Crypto Trading</div>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+
+    <p><strong>Name:</strong> Najam Ud Din</p>
+    <p><strong>Location:</strong> Mardan, Pakistan</p>
+    <p><strong>Email:</strong> najamkhan1098@gmail.com</p>
+
+    <button onclick="showMsg()">Send Greeting</button>
+
+    <p id="msg"></p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Najam Ud Din | Portfolio Website
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function showMsg(){
+  document.getElementById("msg").innerHTML =
+  "Thanks for visiting my portfolio!";
+}
+</script>
+
+</body>
+</html>
