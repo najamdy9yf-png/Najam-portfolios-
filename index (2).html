@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Najam Ud Din | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0077cc,#00aaff);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:white;
+    color:#0077cc;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0077cc;
+}
+
+.about{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Najam Ud Din</h1>
+    <p>Web Developer & Technology Learner</p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<section>
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Hello! I am Najam Ud Din. I am learning web development and building modern websites using HTML, CSS and JavaScript.
+            My goal is to become a professional developer and create amazing web applications.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+        <p><strong>Email:</strong> najamkhan1098@gmail.com</p>
+
+        <button onclick="showMessage()">
+            Say Hello
+        </button>
+
+        <p id="msg"></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Najam Ud Din | Portfolio Website
+</footer>
+
+<script>
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "Thank you for visiting my portfolio website!";
+}
+</script>
+
+</body>
+</html>
+
