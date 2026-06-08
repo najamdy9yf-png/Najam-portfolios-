@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Najam Ud Din - Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .box {
+      text-align: left;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Najam Ud Din</h1>
+    <p>Web Developer Portfolio</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="box">
+      <p><b>Name:</b> Najam Ud Din</p>
+      <p>I am a beginner web developer learning HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="box">
+      <p>✔ 10th Class Student</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="box">
+      <p>✔ HTML</p>
+      <p>✔ JavaScript</p>
+      <p>✔ Computer Science (CS)</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="box">
+      <p><b>Email:</b> najamkhan1098@gmail.com</p>
+      <p><b>Phone:</b> 03138582563</p>
+
+      <button onclick="copyNumber()">Copy Phone Number</button>
+      <p id="msg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Najam Ud Din | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function copyNumber() {
+      navigator.clipboard.writeText("03138582563");
+      document.getElementById("msg").innerText =
+        "Phone number copied ✔";
+    }
+  </script>
+
+</body>
+</html>
